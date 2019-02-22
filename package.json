@@ -1,15 +1,12 @@
 {
-  "name": "bricks/",
+  "name": "bricks",
   "version": "1.0.0",
-  "description": "Describe bricks/ here",
+  "description": "A brick breaker game implementation in java script.",
   "private": true,
   "scripts": {
     "build": "nwb build-web-app",
     "clean": "nwb clean-app",
-    "start": "nwb serve-web-app --reload",
-    "test": "nwb test",
-    "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "start": "nwb serve-web-app --reload"
   },
   "dependencies": {
   },
