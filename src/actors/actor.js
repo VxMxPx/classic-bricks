@@ -12,6 +12,7 @@ export default class Actor {
       this.loadTexture(texture, texture => this.texture = texture)
     }
 
+    this.lastHit = ''
     this.constraints = {x:0, y:0, width:0, height:0}
   }
 
@@ -90,6 +91,7 @@ export default class Actor {
     this.x = x
     this.y = y
 
+    this.lastHit = hit
     return hit
   }
 

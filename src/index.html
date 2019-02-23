@@ -6,8 +6,71 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>bricks</title>
     <meta name="description" content="">
+    <style>
+      html {
+        background: #F3F3EB;
+        overflow: hidden;
+      }
+      .stats {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 0;
+        margin: 0;
+        color: rgb(53, 53, 50);
+      }
+      small.instructions {
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      small.instructions .key {
+        font-family: monospace;
+        background: rgba(207, 207, 107, .5);
+        padding: 3px;
+        border-radius: 2px;
+      }
+      #game {
+        position: absolute;
+        background: #eee;
+        border-bottom: none;
+        box-shadow: 0 -6px 32px rgba(0,0,0,.1);
+        border-radius: 3px;
+      }
+      #game > canvas {
+        display: block;
+        background: #fff;
+        border-radius: 3px;
+        border-bottom: 8px solid rgba(0, 0, 0, 0.14);
+      }
+      #game .main.stats {
+        font-size: 14px;
+        display: flex;
+      }
+      #game .main.stats > span {
+        flex-grow: 1;
+        text-align: center;
+      }
+      #game .main.stats > span:first-child { width: 20%;  text-align: left; margin-left: 10px; }
+      #game .main.stats > span:last-child { width: 20%; text-align: right; margin-right: 10px; }
+
+      #game #lives {
+        color: red;
+      }
+    </style>
   </head>
   <body>
-    <div id="game"></div>
+    <div id="game">
+      <div class="stats main">
+        <span id="lives"></span>
+        <span id="level"></span>
+        <span id="score"></span>
+      </div>
+      <canvas id="canvas"></canvas>
+      <small class="stats instructions">
+        Use left <span class="key">←</span> or right <span class="key">→</span> key to move paddle.
+        Press <span class="key">P</span> or <span class="key">Escape</span> to toggle pause.
+      </small>
+    </div>
   </body>
 </html>

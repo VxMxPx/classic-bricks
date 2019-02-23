@@ -12,11 +12,14 @@ export default class Brick extends Actor {
 
     this.maxStrength = this.strength = data.strength
     this.textures = data.textures
+    this.score = data.score
   }
 
   damage() {
     this.strength--
-    this.updateTexture()
+    if (this.strength) {
+      this.updateTexture()
+    }
   }
 
   updateTexture() {

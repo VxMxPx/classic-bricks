@@ -2,6 +2,14 @@ export default [
   {
     title: 'Level 1',
     background: '',
+    margin: {top: 4, left: 0},
+    data: [
+      [0, 0, 0, 1, 2, 2, 1, 0, 0, 0]
+    ]
+  },
+  {
+    title: 'Level 2',
+    background: '',
     margin: {top: 2, left: 0},
     data: [
       [1, 1, 0, 1, 0, 0, 1, 0, 1, 1],
@@ -9,7 +17,7 @@ export default [
     ]
   },
   {
-    title: 'Level 2',
+    title: 'Level 3',
     background: '',
     margin: {top: 1, left: 0},
     data: [
