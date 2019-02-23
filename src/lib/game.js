@@ -8,6 +8,10 @@ import bricks from '../data/bricks'
 
 export default class Game {
 
+  static STATE_RUNNING = 0
+  static STATE_PAUSED = 1
+  static STATE_MENU = 2
+
   constructor(settings) {
     this.settings = settings
     this.size = { ...settings.game }
@@ -16,6 +20,7 @@ export default class Game {
     this.height = settings.game.height
 
     this.level = 1
+    this.state = Game.STATE_RUNNING
 
     this.input = new Input()
 
@@ -33,6 +38,26 @@ export default class Game {
     this.pad.setPosition('center', this.height-this.pad.height-20)
 
     this.createLevel()
+
+    // Register inputs
+    this.input.on('keydown', key => {
+      if (key === 'Escape' || key === 'KeyP') {
+        this.togglePause()
+      }
+    })
+  }
+
+  togglePause() {
+    // By design switch, we don't want to impact other states
+    switch (this.state) {
+      case Game.STATE_RUNNING:
+        this.state = Game.STATE_PAUSED
+        break
+
+      case Game.STATE_PAUSED:
+        this.state = Game.STATE_RUNNING
+        break
+    }
   }
 
   createLevel() {
@@ -59,7 +84,7 @@ export default class Game {
       let collide = this.ball.collide(brick)
       if (collide) {
         this.ball.speed[collide[0]] *= -1
-        brick.strength--
+        brick.damage()
       }
       return !!brick.strength
     })

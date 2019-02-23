@@ -38,7 +38,7 @@ export default [
   {
     index:  7,
     sound: '',
-    textures: ['brick-black.png', 'brick-black.png'],
+    textures: ['brick-black.png', 'brick-black-damage.png'],
     strength: 2
   }
 ]

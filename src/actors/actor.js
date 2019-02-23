@@ -9,17 +9,16 @@ export default class Actor {
     if (texture.indexOf('(') > 0 || texture.indexOf('#') === 0) {
       this.color = texture
     } else {
-      this.texture = this.loadTexture(texture)
+      this.loadTexture(texture, texture => this.texture = texture)
     }
 
     this.constraints = {x:0, y:0, width:0, height:0}
   }
 
-  loadTexture(texture) {
+  loadTexture(texture, onLoad) {
     const img = new Image()
-    img.onload = () => this.textureIsReady = true
+    img.onload = () => onLoad(img)
     img.src = texture
-    return img
   }
 
   setConstraints(constraints) {
@@ -102,7 +101,7 @@ export default class Actor {
     if (this.color) {
       ctx.fillStyle = this.color
       ctx.fillRect(this.x, this.y, this.width, this.height)
-    } else {
+    } else if (this.texture) {
       ctx.drawImage(this.texture, this.x, this.y, this.width, this.height)
     }
   }

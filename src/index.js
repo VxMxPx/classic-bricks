@@ -1,5 +1,6 @@
 import settings from './settings'
 import Game from './lib/game'
+import { drawPausedScreen } from './lib/ui'
 
 // Create basic game elements
 const container = document.getElementById('game')
@@ -21,15 +22,27 @@ const game = new Game(settings)
 
 // Main loop
 let lastTime = 0
+let screenDrawn = false
 
 function gameLoop(timestamp) {
   let dtime = timestamp - lastTime
   lastTime = timestamp
 
-  ctx.clearRect(0, 0, settings.game.width, settings.game.height)
+  switch (game.state) {
+    case Game.STATE_PAUSED:
+      if (!screenDrawn) {
+        drawPausedScreen(ctx, settings.game.width, settings.game.height)
+        screenDrawn = true
+      }
+      break
 
-  game.update(dtime)
-  game.draw(ctx)
+    case Game.STATE_RUNNING:
+      screenDrawn = false
+      ctx.clearRect(0, 0, settings.game.width, settings.game.height)
+      game.update(dtime)
+      game.draw(ctx)
+      break
+  }
 
   requestAnimationFrame(gameLoop)
 }

@@ -14,9 +14,16 @@ export default class Brick extends Actor {
     this.textures = data.textures
   }
 
-  updateTexture(texture) {
+  damage() {
+    this.strength--
+    this.updateTexture()
+  }
+
+  updateTexture() {
     let index = this.maxStrength-this.strength
-    texture = this.textures[index]
-    return `assets/images/${texture}`
+    let texture = this.textures[index]
+    this.loadTexture(`assets/images/${texture}`, next => {
+      this.texture = next
+    })
   }
 }
