@@ -17,7 +17,7 @@
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="brick.svg"
-   inkscape:export-filename="/home/marko/Downloads/brick-black.png"
+   inkscape:export-filename="/home/marko/Projects/game.dev/bricks/public/assets/images/brick-white.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -62,7 +62,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="39.331761"
+     inkscape:cx="-156.66824"
      inkscape:cy="5.4568641"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -83,7 +83,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -93,7 +93,7 @@
      id="layer1"
      transform="translate(0,-289.06248)">
     <rect
-       style="fill:#2c2c2c;fill-opacity:1;stroke-width:0.26458333;stroke:#000000;stroke-opacity:0.47111112;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#b1b1b1;fill-opacity:1;stroke-width:0.26458333;stroke:none;stroke-opacity:0.47111112;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect815"
        width="20.637501"
        height="7.4083333"
