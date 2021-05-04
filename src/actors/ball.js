@@ -2,7 +2,7 @@ import Actor from './actor'
 
 export default class Ball extends Actor {
   constructor() {
-    super({x: 0, y: 0, width: 16, height: 16}, '/assets/images/ball.svg')
+    super({x: 0, y: 0, width: 16, height: 16}, 'assets/images/ball.svg')
 
     this.speed = {}
     this.reset()

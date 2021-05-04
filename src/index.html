@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <style>
       html {
-        background: #F3F3EB;
+        background: #111;
         overflow: hidden;
       }
       .stats {
@@ -16,7 +16,7 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px 0;
         margin: 0;
-        color: rgb(53, 53, 50);
+        color: #aaa;
       }
       small.instructions {
         font-size: 12px;
@@ -26,22 +26,21 @@
       }
       small.instructions .key {
         font-family: monospace;
-        background: rgba(207, 207, 107, .5);
+        background: #000;
         padding: 3px;
         border-radius: 2px;
       }
       #game {
         position: absolute;
-        background: #eee;
+        background: #333;
         border-bottom: none;
-        box-shadow: 0 -6px 32px rgba(0,0,0,.1);
-        border-radius: 3px;
+        /*border-radius: 3px;*/
       }
       #game > canvas {
         display: block;
-        background: #fff;
-        border-radius: 3px;
-        border-bottom: 8px solid rgba(0, 0, 0, 0.14);
+        background: #000;
+        /*border-radius: 3px;*/
+        /*border-bottom: 8px solid rgba(0, 0, 0, 0.14);*/
       }
       #game .main.stats {
         font-size: 14px;
@@ -55,7 +54,7 @@
       #game .main.stats > span:last-child { width: 20%; text-align: right; margin-right: 10px; }
 
       #game #lives {
-        color: red;
+        color: #a33;
       }
     </style>
   </head>

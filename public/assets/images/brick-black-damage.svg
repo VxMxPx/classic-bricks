@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,7 +12,7 @@
    viewBox="0 0 21.166666 7.9375002"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
    sodipodi:docname="brick-black-damage.svg"
    inkscape:export-filename="/home/marko/Projects/game.dev/bricks/public/assets/images/brick-black-damage.png"
    inkscape:export-xdpi="96"
@@ -38,10 +36,11 @@
      inkscape:showpageshadow="false"
      showborder="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1046"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="34"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -50,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,7 +59,7 @@
      id="layer1"
      transform="translate(0,-289.06248)">
     <rect
-       style="fill:#2e221d;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.47111116"
+       style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.47111116"
        id="rect815"
        width="20.637501"
        height="7.4083333"
@@ -69,14 +68,16 @@
        rx="0.26458332"
        ry="0.26458332" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 4.1175781,289.32706 2.2158854,2.33164 -1.8355469,1.81901 3.0923177,1.0418 -0.8433594,2.18281"
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.24804px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0.40440784,291.31189 c 0,0 2.44245276,0.31561 2.73400626,1.27849 0.2351347,0.77655 -1.6680607,1.37823 -1.2626185,2.08104 0.5371797,0.93117 3.2243048,-0.0679 3.2243048,-0.0679 l -0.2201913,2.08398"
        id="path835"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csacc" />
     <path
-       style="fill:none;stroke:#cccccc;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 20.885547,296.38813 -5.04362,-3.55534 0.760677,-3.42304"
+       style="fill:none;stroke:#cccccc;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 20.436836,296.58079 c 0,0 -4.301618,-1.63691 -5.04362,-3.55534 -0.421642,-1.09015 0.760677,-3.42304 0.760677,-3.42304"
        id="path837"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
   </g>
 </svg>
